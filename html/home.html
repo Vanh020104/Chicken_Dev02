@@ -26,13 +26,13 @@
                 </div>
                 <div class="search">
                     <a href=""><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.2875 21.375L16.725 16.05C17.925 14.475 18.6 12.5625 18.6 10.5375C18.6 8.10001 17.6625 5.85001 15.9375 4.12501C12.4125 0.600012 6.67505 0.600012 3.11255 4.12501C1.42505 5.81251 0.487549 8.10001 0.487549 10.5C0.487549 12.9375 1.42505 15.1875 3.15005 16.9125C4.91255 18.675 7.23755 19.575 9.56255 19.575C11.85 19.575 14.1 18.7125 15.8625 17.025L22.5 22.3875C22.6125 22.5 22.7625 22.5375 22.9125 22.5375C23.1 22.5375 23.2875 22.4625 23.4375 22.3125C23.625 22.0125 23.5875 21.6 23.2875 21.375ZM4.05005 16.0125C2.58755 14.55 1.80005 12.6 1.80005 10.5C1.80005 8.40001 2.58755 6.48751 4.08755 5.02501C5.58755 3.52501 7.57505 2.77501 9.56255 2.77501C11.55 2.77501 13.5375 3.52501 15.0375 5.02501C16.5 6.48751 17.325 8.43751 17.325 10.5C17.325 12.5625 16.4625 14.55 15 16.0125C12 19.0125 7.08755 19.0125 4.05005 16.0125Z" fill="#2D2A24"></path></svg></a>
-                    <div class="">
+                    <button class="button_modal" id="openModalButton">
                         <a class="search-one" href="">Find Product
                         <a class="search-two" href="">Quick Search</a>
-                    </div>
+                        </button>
                 </div>
                 <div class="signin">
-                    <div class="">
+                    <div class="open-modal" id="openModalButton02">
                         <a class="signin-one" href="">Hello, Sign In</a>
                         <a class="signin-two" href="">Your Account</a>
                     </div>
@@ -42,6 +42,47 @@
                 </div>
             </div>
         </div>
+
+        <!--login  -->
+        <!-- <div class="open-modal" id="openModalButton02">Đăng nhập</div> -->
+    <div class="modal" id="modalContainer02">
+        <div class="modal-content-two">
+            <span class="close" id="closeModalButton02">&times;</span>
+            <span class="welcom">Welcome To Your Sill Account</span>
+            <br>
+            <span class="Log_into_your_account">Log into your account to manage orders and access online courses.</span>
+           
+            <div class="input_login">
+
+                <input type="text" id="emailInput" placeholder="Email">
+                <input type="password" id="passwordInput" placeholder="Password">
+                <button id="loginButton">Login</button>
+                <p id="errorMessage" class="error hidden">Please enter enough information.</p>
+            </div>
+            <div class="reset_pass">
+                <span>New here? <a href="">Create an account</a></span>
+                <span>Trouble logging in? <a href="">Reset password </a></span>
+            </div>
+            <div class="login__button">
+                <button>
+                    <div class="login__button-content">
+                        <span class="login__button-content-one">Plant Care Library</span>
+                        <span class="login__button-content-two">Get plant care tips for all your purchases</span>
+                    </div>
+                    <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xml:space="preserve" class="fill-current arrow inline-block ml-3 black"><path d="m61.5 28.5-6.9-8.2c-.6-.7-1.7-.8-2.5-.2-.7.6-.8 1.7-.2 2.5l6.5 7.7H3c-1 0-1.8.8-1.8 1.8S2 33.9 3 33.9h55.4l-6.5 7.7c-.6.7-.5 1.8.2 2.5.3.3.7.4 1.1.4.5 0 1-.2 1.3-.6l6.9-8.2c1.8-2.2 1.8-5.2.1-7.2z"></path></svg>
+                </button>
+
+                <button>
+                    <div class="login__button-content">
+                        <span class="login__button-content-one"> Your Order</span>
+                        <span class="login__button-content-two">Lookup status and get UPS tracking info</span>                      
+                    </div>
+                    <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xml:space="preserve" class="fill-current arrow inline-block ml-3 black"><path d="m61.5 28.5-6.9-8.2c-.6-.7-1.7-.8-2.5-.2-.7.6-.8 1.7-.2 2.5l6.5 7.7H3c-1 0-1.8.8-1.8 1.8S2 33.9 3 33.9h55.4l-6.5 7.7c-.6.7-.5 1.8.2 2.5.3.3.7.4 1.1.4.5 0 1-.2 1.3-.6l6.9-8.2c1.8-2.2 1.8-5.2.1-7.2z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--  -->
 
         <!-- modal -->
         <!-- <a class="searchLink" href="http://127.0.0.1:5500/search.html" id="searchLink">Search</a>
@@ -53,13 +94,31 @@
                 <button>Tìm kiếm</button>
             </div>
         </div> -->
-        <button class="button_modal" id="openModalButton">Search</button>
+        <!-- <button class="button_modal" id="openModalButton">Search</button> -->
     <div id="modalContainer" class="modal-container">
         <div id="modalContent" class="modal-content">
             <span id="closeModalButton" class="close">&times;</span>
-            <h2>Tìm kiếm</h2>
-            <input type="text" placeholder="Nhập sản phẩm cần tìm">
-            <button>Tìm kiếm</button>
+            <h2>Search</h2>
+            <input type="text" placeholder="Search The Sill..."> <br>
+            <!-- <button>Search!</button> -->
+            <div class="search_popular">
+                <span>Popular Searches</span>
+                <div class="serach_popular-menu">
+                    <div class="search_vanh-one">
+
+                        <a href="">Trees</a>
+                           <a href="">Flower</a>
+                          <a href="">Event</a>  
+                           <a href="">Plant Care</a> 
+                    </div>
+                    <div class="search_vanh-one">
+
+                        <a href="">Filter</a>  
+                        <a href="">Register</a>  
+                        <a href="">Tree Information</a>      
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
@@ -525,7 +584,7 @@ openModalButton.addEventListener("click", () => {
     modalContainer.style.display = "block";
     setTimeout(() => {
         modalContainer.style.right = "0";
-    }, 100);
+    }, 90);
 });
 
 closeModalButton.addEventListener("click", () => {
@@ -533,8 +592,51 @@ closeModalButton.addEventListener("click", () => {
     setTimeout(() => {
         modalContainer.style.display = "none";
 
-    }, 500);
+    }, 300);
 });
+
+    </script>
+
+    <!-- login -->
+    <script>
+        const openModalButton02 = document.getElementById("openModalButton02");
+const modalContainer02 = document.getElementById("modalContainer02");
+const closeModalButton02 = document.getElementById("closeModalButton02");
+
+openModalButton02.addEventListener("click", () => {
+    modalContainer02.style.display = "block";
+    setTimeout(() => {
+        modalContainer02.style.right = "0";
+    }, 90);
+});
+
+closeModalButton02.addEventListener("click", () => {
+    modalContainer02.style.right = "-400px";
+    setTimeout(() => {
+        modalContainer02.style.display = "none";
+    }, 300);
+});
+    </script>
+
+    <script>
+        const emailInput = document.getElementById("emailInput");
+const passwordInput = document.getElementById("passwordInput");
+const loginButton = document.getElementById("loginButton");
+const errorMessage = document.getElementById("errorMessage");
+
+loginButton.addEventListener("click", () => {
+    // Kiểm tra xem email và password có trống không
+    if (emailInput.value.trim() === "" || passwordInput.value.trim() === "") {
+        errorMessage.classList.remove("hidden");
+    } else {
+        errorMessage.classList.add("hidden");
+        // Thực hiện xử lý đăng nhập ở đây (đã được ẩn ở ví dụ)
+    }
+});
+
+
+
+
 
     </script>
 </html>
