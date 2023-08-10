@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration:none
-    
+    text-decoration:none;
+    font-family: 'Lato', sans-serif;
     
 }
+
 body{
  margin:0px 0px;
+ font-family: 'Lato', sans-serif;
 }
 
  
@@ -202,7 +204,21 @@ hr{
     justify-content: space-between;
     padding-top: 10px;
 }
-.right__form-pice > spam{
+.right__form-pice span{
     color: #817F7C;
     font-size: 17px;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+/* anh modal */
+.image-modal {
+    display: flex;
+}
+
+.image-modal img{
+    margin: 20px 20px;
+    width: 150px;
 }
