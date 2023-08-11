@@ -1,91 +1,58 @@
-<<<<<<< Updated upstream
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-family: 'Lato', sans-serif;
-    
-}
-
-body{
- margin:0px 0px;
- font-family: 'Lato', sans-serif;
-=======
-* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
+  text-decoration:none
+  
+  
 }
-body {
-  margin: 0px 0px;
->>>>>>> Stashed changes
+body{
+
 }
 
+
 .box1 {
-  padding-top: 30px;
+  padding-top: 30px;  
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   padding-bottom: 20px;
-  margin: 0px 30px;
+  margin: 0 50px;
+ 
 }
 
-.box1__tex h2 {
+.box1__tex h2{
   margin-bottom: 10px;
-  color: #00ab84;
+  color: #00AB84;
   font-size: 45px;
+
 }
 .box1__tex2 {
   padding-right: 100px;
   position: relative;
+ 
 }
-.box1__tex2 > h4 {
-  font-weight: bolder;
+.box1__tex2 > h4{
+  font-weight:bolder;
   cursor: pointer;
 }
-.box1__tex2:hover h4 {
-  color: #00ab84;
+.box1__tex2:hover  h4{
+  color: #00AB84;
 }
 
-.box1__tex2 .dropdown {
-  position: relative;
-}
-
-<<<<<<< Updated upstream
-.box1__tex-content {
-    font-size: 14px;
+.box1__tex2 .dropdown{
+  
+ position:relative; 
+  
 }
 
 
 .box1__tex2 ul{
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color:white;
-    padding: 0;
-    margin: 0;
-    z-index: 1;
-    border: 1px solid #f5f3f1;
-    border-radius: 2px;
-}
-
-.box1__tex-content {
-    font-size: 16px;
-}
-
-.box1__tex2 ul li{
-    list-style-type: none;
-   
-=======
-.box1__tex2 ul {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: white;
+  background-color:white;
   padding: 0;
   margin: 0;
   z-index: 1;
@@ -93,34 +60,37 @@ body {
   border-radius: 2px;
 }
 
-.box1__tex2 ul li {
+.box1__tex2 ul li{
   list-style-type: none;
->>>>>>> Stashed changes
+ 
 }
-.box1__tex2 ul li:hover {
+.box1__tex2 ul li:hover{
   background-color: #23c59f;
 }
 
-.box1__tex2 ul a {
+.box1__tex2 ul a{
   color: black;
   display: block;
   padding: 5px 10px;
 }
-.box1__tex2 ul a:hover {
-  color: white;
+.box1__tex2 ul a:hover{
+  color: white
 }
-.box1__tex2:hover ul {
+.box1__tex2:hover ul{
   display: block;
+
 }
 
-hr {
+
+
+
+hr{
   height: 0px;
   border-color: inherit;
   border-top-width: 1px;
   margin-bottom: 3px;
 }
 
-<<<<<<< Updated upstream
 
 
 
@@ -128,127 +98,111 @@ hr {
 
 
 .box2{
-    
-    margin-top: 30px;
-    display: flex;
-    margin:0px 30px;
-    margin-bottom: 50px;
-
-=======
-.box2 {
-  margin:30px;
+  
+  margin: 30px 50px;
   display: flex;
->>>>>>> Stashed changes
+
 }
-.box2__lef {
+.box2__lef{
   height: 100px;
   width: 18rem;
   margin-top: 10px;
+  
 }
-.box2__lef > a > p {
+.box2__lef >a >p{
   margin-top: 1rem;
   font-weight: 500;
   color: black;
+  
+  
+ 
 }
 
-.box2__right {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 60px;
+
+.box2__right{
+
+ display: grid;
+ grid-template-columns: auto auto auto auto;
+ gap: 60px;
+
+
 }
-.box2__right-form {
+.box2__right-form{
   width: 252px;
+ 
+
 }
 
-.right__form-img {
+.right__form-img{
   position: relative;
 }
-.right__form-img > img {
+.right__form-img > img{
   width: 252px;
   height: 328px;
   object-fit: cover;
 }
 
-.right__form-color {
-  display: flex;
-  opacity: 0;
+.right__form-color{
+ display: flex;
+ opacity: 0;
+ 
 }
 
-.form__color-blue {
+.form__color-blue{
   width: 25px;
   height: 25px;
   border-radius: 999999999999px;
-  background: #00ab84;
+  background: #00AB84;
   margin-right: 7px;
-  border: solid 1px #817f7c;
+  border: solid 1px #817F7C;
+  
+  
 }
-.form__color-red {
+.form__color-red{
   width: 25px;
   height: 25px;
   border-radius: 999999999999px;
   background: red;
   margin-left: 7px;
-  border: solid 1px #817f7c;
+  border: solid 1px #817F7C;
+
 }
-.right__form-text:hover .right__form-color {
+.right__form-text:hover .right__form-color{
   opacity: 1;
   transform: translatey(20px);
 }
-.right__form-text:hover p {
+.right__form-text:hover p{
   transform: translateY(20px);
 }
 .right__form-text {
-  position: relative;
+ position: relative;
   color: black;
   font-size: 21px;
+  
 }
-.right__form-text > span {
-  font-size: 16px;
-  color: #817f7c;
-  opacity: 1;
+.right__form-text > span{
+font-size: 16px;
+color: #817F7C;
+opacity: 1;
 }
-.right__form-text:hover span {
+.right__form-text:hover span{
   opacity: 0;
 }
-.right__form-text:hover .right__form-pice {
-  transform: translateY(-10px);
-  position: absolute;
-  top: 105px;
+.right__form-text:hover .right__form-pice{
+ transform: translateY(-10px);
+ position: absolute;
+ top:105px ;
+   
 }
-.right__form-text:hover .right__form-pice spam1 {
-  margin-right: 101px;
+.right__form-text:hover .right__form-pice spam1{
+  margin-right: 121px;
 }
-.right__form-pice {
+.right__form-pice{
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
 }
-.right__form-pice > spam {
-  color: #817f7c;
+.right__form-pice > spam{
+  color: #817F7C;
   font-size: 17px;
 }
-<<<<<<< Updated upstream
-.right__form-pice span{
-    color: #817F7C;
-    font-size: 17px;
-}
-
-.footer {
-    margin-top: 50px;
-}
-
-/* anh modal */
-.image-modal {
-    display: flex;
-}
-
-.image-modal img{
-    margin: 20px 20px;
-    width: 150px;
-}
-
-.right__form-text p {
-    font-size: 18px;
-}
-=======
->>>>>>> Stashed changes
