@@ -7,12 +7,12 @@
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/information.css">
+    <link rel="stylesheet" href="/css/backtop.css">
     
     <title>Document</title>
 </head>
     <div class="ifm">
         <div class="container">
-            <!-- menu dau -->
             <div class="border">
                 Plant Palace
             </div>
@@ -41,8 +41,76 @@
                             <a class="signin-two" href="">Your Account</a>
                         </div>
                     </div>
-                    <div class="cart">
+                    <div class="cart" id="cartIcon">
                         <a href=""><svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-b22192c0=""><path d="M21.4875 7.38749H20.3625L17.8125 0.899993C17.6625 0.562493 17.2875 0.412493 16.95 0.524993C16.6125 0.674993 16.4625 1.04999 16.575 1.38749L18.9375 7.42499H5.02505L7.38755 1.38749C7.53755 1.04999 7.35005 0.674993 7.01255 0.524993C6.67505 0.374993 6.30005 0.562493 6.15005 0.899993L3.60005 7.38749H2.47505C1.91255 7.38749 1.42505 7.83749 1.42505 8.43749V11.625C1.42505 12.1875 1.87505 12.675 2.47505 12.675H2.51255L3.48755 21.225C3.63755 22.5375 4.76255 23.55 6.11255 23.55H17.8125C19.1625 23.55 20.2875 22.5375 20.4375 21.225L21.4125 12.675H21.4501C22.0126 12.675 22.5 12.225 22.5 11.625V8.43749C22.5375 7.87499 22.0875 7.38749 21.4875 7.38749ZM2.77505 8.69999H21.225V11.325H2.77505V8.69999ZM19.1625 21.0375C19.0875 21.7125 18.525 22.2 17.85 22.2H6.15005C5.47505 22.2 4.91255 21.7125 4.83755 21.0375L3.86255 12.6375H20.1376L19.1625 21.0375Z" fill="#2D2A24"></path> <path d="M8.06257 19.05C8.43757 19.05 8.73757 18.75 8.73757 18.375V15.4875C8.73757 15.1125 8.43757 14.8125 8.06257 14.8125C7.68757 14.8125 7.38757 15.1125 7.38757 15.4875V18.375C7.38757 18.75 7.68757 19.05 8.06257 19.05Z" fill="#2D2A24"></path> <path d="M15.9376 19.05C16.3126 19.05 16.6126 18.75 16.6126 18.375V15.4875C16.6126 15.1125 16.3126 14.8125 15.9376 14.8125C15.5626 14.8125 15.2626 15.1125 15.2626 15.4875V18.375C15.3001 18.75 15.6001 19.05 15.9376 19.05Z" fill="#2D2A24"></path></svg></a>
+                        <!-- cart -->
+                        <div class="modal" id="modalContainer03">
+                            <div class="modal-content05">
+                                <span class="close" id="closeModalButton03">&times;</span>
+                                <div class="modal_cart-none">
+                                    <div class="your_cart">
+                                        <div class="vanh-cart">
+    
+                                            <span class="your_cart-heading">Your Cart</span>
+                                            <span class="your_cart-content">Our team preps, prunes, & packs every order—lots of care goes into every step.</span>
+                                        </div>
+    
+                                        <div class="cart_thanhtap"></div>
+                                    </div>
+    
+                                    <div class="cart_comment">
+                                        <span class="cart_add">Add a gift message?</span>
+                                        <textarea class="select-vanh" id="" cols="30" rows="10" placeholder="Enter your message..."></textarea>
+                                    </div>
+    
+                                    <!-- thanh tap -->
+                                    <div class="cart_thanhtap"></div>
+                                    <!-- product 1 -->
+                                    <div class="cart_image">
+                                        <div class="image_product-cart">
+                                            <img src="/image/image/flower02.jpg" alt="Ảnh sản phẩm">
+                                        </div>
+                                        
+    
+                                        <div id="contentDiv" class="cart_information-product">
+                                            <p class="cart_name-product">Hoya Carnosa ‘Tricolor’</p>
+                                            <span class="tree_small">Small / Hyde / Mint</span>
+                                            <span class="cart_price-product">
+                                                <p class="price_vanh-tree">$68</p> <p class="freeship_vanh-tree">Ships Free</p>
+                                            </span>
+                                            
+                                            <span class="cart_quantity-tree">
+                                                <label class="quantityInput" for="quantityInput">Quantity:</label>
+                                                <span>
+                                                    <input class="cart_quantity-vanh" type="number" id="quantityInput" min="1" value="01">
+                                                    <a id="hideDivLink" class="delete_product_vanh" href="">Remote</a>
+                                                </span>
+                                            </span>
+    
+                                            
+                                        </div>
+                                    </div>
+                            
+                                    <!-- thanh tap -->
+                                    <div class="cart_thanhtap"></div>
+                                    
+                                    <div class="cart_total">
+                                        <!-- <p  class="total_money">Subtotal: <span style="font-weight: 400;color: #666;" class="totalPrice" id="totalPrice">68</span> <span class="cart_money-dola" style="font-weight: 400; color: #666;"> US$</span></p> -->
+                                        <p id="valueToTransfer" class="total_money">Subtotal: <span style="font-weight: 400;color: #666;" class="totalPrice" id="totalPrice">68</span> <span class="cart_money-dola" style="font-weight: 400; color: #666;"> US$</span></p>
+                                        <span class="cart_ship-vanh">
+    
+                                            <p class="freeship">Shipping: </p>
+                                            <span>Free</span>
+                                        </span>
+    
+                                        <button><a id="goToTrang2" href="/html/pay.html">Checkout</a></button>
+                                        <!-- <button><a  href="http://127.0.0.1:5501/vanh.html">Checkout</a></button> -->
+                                        <span class="thue">Taxes calculated at checkout.</span>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -99,10 +167,10 @@
                     <div class="serach_popular-menu">
                         <div class="search_vanh-one">
     
-                            <a href="">Trees</a>
+                            <a href="/html/tree.html">Trees</a>
                                <a href="/html/flowers&bouquets.html">Flower</a>
-                              <a href="">Event</a>  
-                               <a href="">Plant Care</a> 
+                              <a href="/html/store.html">Event</a>  
+                               <a href="/html/plancare.html">Plant Care</a> 
                         </div>
                         <div class="search_vanh-one">
     
@@ -119,33 +187,35 @@
                 </div>
             </div>
         </div>
-
-          <!-- end -->
-        <!-- menu -->
-        <div class="menu">
-            <div class="menu_list">
-                <a href="">Trees</a>
-            </div>
-            <div class="menu_list">
-                <a href="http://127.0.0.1:5501/html/flowers&bouquets.html">Flower</a>
-            </div>
-            <div class="menu_list">
-                <a href="">Tree information</a>
-            </div>
-            <div class="menu_list">
-                <a href="">Plant Care</a>
-            </div>
-            <div class="menu_list">
-                <a href="">Filter</a>
-            </div>
-            <div class="menu_list">
-                <a href="">Register</a>
-            </div>
-            <div class="menu_list">
-                <a href="">Event</a>
-            </div>
-        </div>
+    
+    
             <!-- end -->
+            <!-- menu -->
+            <div class="menu">
+                <div class="menu_list">
+                    <a href="/html/tree.html">Trees</a>
+                </div>
+                <div class="menu_list">
+                    <a href="/html/flowers&bouquets.html">Flower</a>
+                </div>
+                <div class="menu_list">
+                    <a href="/html/information.html">Tree information</a>
+                </div>
+                <div class="menu_list">
+                    <a href="/html/plancare.html">Plant Care</a>
+                </div>
+                <div class="menu_list">
+                    <a href="">Filter</a>
+                </div>
+                <div class="menu_list">
+                    <a href="">Register</a>
+                </div>
+                <div class="menu_list">
+                    <a href="/html/store.html">Event</a>
+                </div>
+            </div>
+
+
             <div class="ifm-top row">
                 <p>Tree information</p>
             </div>
@@ -179,7 +249,7 @@
                             five feet tall. Lastly, while both plants are known for their large foliage the xanadu 
                             has slightly smaller and narrower leaves than the selloum, although the shapes are very similar.
                         </p>
-                        <iframe width="760" height="400" src="https://www.youtube.com/embed/o34p5lZPzpM" 
+                        <iframe width="800" height="450" src="https://www.youtube.com/embed/o34p5lZPzpM" 
                         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         
                        
@@ -339,8 +409,28 @@
            </div>
         </div>
         
+        <div id="backtop">
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
     </div>
 </body>
 <link rel="stylesheet" href="/css/home.css">
 <script src="/js/exam.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+   <script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if($(this).scrollTop()){
+                $('#backtop').fadeIn();
+            } else{
+                $('backtop').fadeOut();
+            }
+        });
+        $("#backtop").click(function(){
+            $('html, body').animate({
+                scrollTop: 0
+            }, 400);
+        });
+    });
+   </script> 
 </html>
