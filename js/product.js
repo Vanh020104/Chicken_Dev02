@@ -33,7 +33,7 @@ function send() {
 }  
 var luaChonDaChon1 = 0;
 
-function chonCai1(luaChon) {
+function chonCai1(luaChon1) {
     // Đặt lại kiểu dáng của các nút bấm
     if (luaChonDaChon1 !== 0) {
         var nutDaChon1 = document.getElementById("chonCai1" + luaChonDaChon1);
@@ -84,3 +84,56 @@ function chonCai(luaChon) {
     var nutChonMoi = document.getElementById("chonCai" + luaChon);
     nutChonMoi.classList.add("button-selected");
 }
+// js comment
+
+const form = document.querySelector("#comment-form");
+    
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const commentInput = document.querySelector("#comment-input");
+  const usernameInput = document.querySelector("#username-input");
+  const ratingInput = document.querySelector("#rating-input");
+
+  if (commentInput.value === "" || usernameInput.value === "" || ratingInput.value === "") {
+    alert("Please fill out all fields!");
+  } else {
+    const commentContainer = document.querySelector(".comment-container");
+    const comment = document.createElement("div");
+    comment.classList.add("comment");
+    const userIcon = document.createElement("i");
+    userIcon.classList.add("fa", "fa-user", "user-icon");
+    const commentInfo = document.createElement("div");
+    commentInfo.classList.add("comment-info");
+    const username = document.createElement("span");
+    username.classList.add("username");
+    username.textContent = usernameInput.value;
+    const commentText = document.createElement("span");
+    commentText.classList.add("comment-text");
+    commentText.textContent = commentInput.value;
+    const rating = document.createElement("div");
+    rating.classList.add("rating");
+
+    for (let i = 0; i < ratingInput.value; i++) {
+      const starIcon = document.createElement("i");
+      starIcon.classList.add("fa", "fa-star");
+      rating.appendChild(starIcon);
+    }
+
+    for (let i = ratingInput.value; i < 5; i++) {
+      const starIcon = document.createElement("i");
+      starIcon.classList.add("fa", "fa-star-o");
+      rating.appendChild(starIcon);
+    }
+
+    commentInfo.appendChild(username);
+    commentInfo.appendChild(commentText);
+    commentInfo.appendChild(rating);
+    comment.appendChild(userIcon);
+    comment.appendChild(commentInfo);
+    commentContainer.appendChild(comment);
+
+    commentInput.value = "";
+    usernameInput.value = "";
+    ratingInput.value = "";
+  }
+});
