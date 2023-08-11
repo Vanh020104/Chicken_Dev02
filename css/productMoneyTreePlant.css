@@ -1,0 +1,146 @@
+.pncmg{
+    margin: 0px 4%;
+    margin-top: 30px;
+}
+.pncproductinformation{
+    display: flex;
+    margin-bottom: 30px;
+}
+.pncimgproductmini{
+    width: 150px;
+    cursor: pointer;
+}
+.pncimgproductmini:focus{
+        border: 10px solid black;
+        outline: none;
+}
+.pncimgproduct{
+    display: block;
+    max-width: 150px;
+}
+.pncimgproductbig{
+    margin-left: 2%;
+}
+.pncdetails{
+    margin-left:4%;
+    width: 100%;
+}
+.pncnameproduct{
+    margin-top: 3px;
+    font-size: 45px;
+}
+.pncpriceproduct{
+    margin-top: 20px;
+    font-size: 28px;
+}
+.pncprprd{
+    display: flex;
+}
+.pncplantonly{
+    margin-top: 28px;
+    margin-left: 15px;
+}
+.pncbuttonsize{
+    display: flex;
+}
+button{
+    cursor: pointer;
+    width: 40%;
+    height: 40px;
+    margin-right: 30px;
+    background-color: white;
+    border: 0.5px solid rgb(217, 213, 213);
+}
+.pncaddcard{
+    margin-top: 40px;
+    display: flex;
+}
+.pncbtaddtocard{
+    width: 300px;
+    height: 50px;
+    background-color: rgb(0,171,132);
+    color: white;
+}.pncsoluongprd{
+    width: 20%;
+    margin-top: 10px;
+    display: flex;
+}
+.ttc1 , .ttc2, .ttc3 , .ttc4,.ttc5{
+    cursor: pointer;
+    font-size: 20px;
+    color:rgb(15, 103, 83) ;
+    margin-top: 10px;
+}
+.ttct1 , .ttct2 , .ttct3 , .ttct4,.ttct5{
+    display: none;
+}
+.pncinformationMoneyTree{
+    margin-top: 30px;
+    display: flex;
+}
+.pnctttMoneyTree{
+    margin-left: 50px;
+    margin-top: 10%;
+}
+/* footer */
+.footer {
+    background-image: url(./image/anh6.png);
+    background-repeat: no-repeat;
+    background-color: #f9f8f7;
+    background-position:right top; /* Căn hình ảnh nền sang bên trái */
+    bottom: 400px;
+}
+
+.footer__top {
+    display: flex;
+}
+
+.vanh__footer {
+    display:  grid;
+    margin: 80px 10px;
+}
+
+.footer_img img {
+    width: 200px;
+    margin: 60px 30px 40px 50px;
+}
+
+.vanh__footer-heading {
+    font-size: 33px;
+    color: #2d2a24;
+}
+
+.vanh__footer-content {
+    margin: 20px 0 0 0;
+}
+
+.vanh__footer a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #1b1b18;
+}
+
+.vanh__footer svg {
+    width: 22px;
+    margin: 10px 0 0 10px;
+    position: relative;
+    top: 3px;
+}
+
+.vanh__footer a:hover {
+    color: #007b5f;
+    font-style: italic;
+}
+.arrivals_product-flower{
+    margin-left: 0px;
+}
+.arrivals{
+    margin-left: -50px;
+}
+.btnsmall:hover , .btnlarge:hover , .btngrownpot:hover , .btnmarianne:hover{
+    border: 2px solid black;
+}
+.btn-selected{
+    color: red;
+    background-color: #007b5f;
+}
