@@ -23,14 +23,7 @@ $(document).ready(function() {
         $(this).parent().children('.ttct5').slideToggle();
     });
 });
-function send() {
-    var arr = document.getElementsByTagName('input');
-    var qty = arr[3].value;
-    if(qty == "") {
-        alert("Please enter quantity");
-        return;
-    } else alert('Add to cart successfully');
-}  
+
 var luaChonDaChon1 = 0;
 
 function chonCai1(luaChon1) {
@@ -137,3 +130,19 @@ form.addEventListener("submit", (event) => {
     ratingInput.value = "";
   }
 });
+function send() {
+    var arr = document.getElementsByTagName('input');
+    var qty = arr[3].value;
+    if ( luaChonDaChon1 == 0) {
+        alert('Please choose size');
+        return;
+    }
+    if(luaChonDaChon == 0) {
+        alert('Please select the type of pot');
+        return;
+    }
+    if(qty == "") {
+        alert("Please enter quantity");
+        return;
+    } else alert('Add to cart successfully');
+}  
