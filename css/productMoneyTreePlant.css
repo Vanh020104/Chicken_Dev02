@@ -144,3 +144,108 @@ button{
     color: red;
     background-color: #007b5f;
 }
+ /* css của phần comment */
+
+ .comment-section {
+    border: 1px solid white;
+  
+    padding: 10px;
+    margin: 30px 100px;
+    display: flex;
+  }
+  
+  .comment-container {
+    margin-top: 10px;
+  }
+  
+  .comment {
+    display: flex;
+    margin-bottom: 10px;
+    margin: 20px 50px;
+  }
+  
+  .user-icon {
+    margin-right: 20px;
+    font-size: 20px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .comment-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .username {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .comment-text {
+    margin-bottom: 5px;
+  }
+  
+  .rating {
+    display: flex;
+  }
+  
+  .rating i {
+    color: #ffc107;
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  
+  .comment_and_rating {
+      text-align: center;
+      color: #636363;
+      font-weight: 600;
+      margin-top: 40px;
+  } 
+  
+  hr {
+      margin: 0 100px;
+      max-width: 100%;
+  }
+  
+  .vanh__comment {
+      /* margin-left: 100px; */
+      margin-top: 30px;
+      max-width: 100%;
+  }
+  
+  
+  input {
+      max-width: 100%;
+      width: 300px;
+      height: 30px;
+      border: 1px solid #666;
+      border-radius: 4px;
+      margin-bottom: 30px;
+      margin-top: 10px;
+      padding: 0 10px;
+      max-width: 100%;
+  }
+  
+  .rating-input {
+      width: 322px;
+      height: 30px;
+      border: 1px solid #666;
+      border-radius: 4px;
+      margin-bottom: 40px;
+      max-width: 100%;
+  }
+  
+  .vanh__comment button {
+      max-width: 100%;
+      width: 160px;
+      height: 30px;
+      color: white;
+      background-color: blue;
+      border: 1px solid blue;
+      border-radius: 3px;
+      margin-left: 80px;
+  }
+  
+  .vanh__comment button:hover {
+      background-color: rgb(79, 79, 249);
+  }
