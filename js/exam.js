@@ -75,3 +75,45 @@ loginButton.addEventListener("click", () => {
         // Thực hiện xử lý đăng nhập ở đây (đã được ẩn ở ví dụ)
     }
 });
+
+// cart
+const cartIcon = document.getElementById("cartIcon");
+const modalContainer03 = document.getElementById("modalContainer03");
+const closeModalButton03 = document.getElementById("closeModalButton03");
+const quantityInput = document.getElementById("quantityInput");
+const totalPrice = document.getElementById("totalPrice");
+
+cartIcon.addEventListener("click", () => {
+    modalContainer03.style.display = "block";
+    setTimeout(() => {
+        modalContainer03.style.right = "0";
+    }, 90);
+});
+
+closeModalButton03.addEventListener("click", () => {
+    modalContainer03.style.right = "-400px";
+    setTimeout(() => {
+        modalContainer03.style.display = "none";
+    }, 300);
+});
+
+quantityInput.addEventListener("input", updateTotalPrice);
+
+function updateTotalPrice() {
+    const pricePerItem = 68; // Giá tiền cho mỗi sản phẩm
+    const quantity = quantityInput.value;
+    const total = pricePerItem * quantity;
+    totalPrice.innerText = total;
+}
+
+
+
+// xoa sp khoi cart
+const hideDivLink = document.getElementById("hideDivLink");
+const contentDiv = document.getElementById("contentDiv");
+
+// Xử lý sự kiện khi click vào thẻ a
+hideDivLink.addEventListener("click", () => {
+    // Ẩn thẻ div
+    contentDiv.style.display = "none";
+});

@@ -7,7 +7,7 @@
 }
 body{
     font-family: 'Lato', sans-serif;
-
+    overflow-x: hidden;
     
 }
 
@@ -64,6 +64,8 @@ body{
 .search {
 }
 
+
+
 .signin-one,
 .search-one,
 .address-one{
@@ -80,9 +82,12 @@ body{
     font-style: italic;
 }
 
+
 .cart svg {
     margin-top: 35px;
     margin-left: 20px;
+    position: relative; /* Đặt icon container là relative để làm cơ sở cho absolute positioning */
+    display: inline-block;
 }
 
 .menu {
@@ -385,6 +390,11 @@ body{
     padding: 15px 15px;
     border-radius: 2px;
     margin-top: 10px;
+    background-color: #009a7b;
+}
+
+.buttons_banner-two a:hover {
+    background-color: #00ab84;
 }
 
 /* flower */
@@ -555,11 +565,15 @@ body{
     height: 60px;
     border: 1px solid #00ab84;
     border-radius: 2px;
-    background-color: #00ab84;
+    background-color: #009a7b;
     color:  white;
     font-size: 18px;
     margin: 20px 0 7px 0;
     cursor: pointer;
+}
+
+.my_account button:hover {
+    background-color: #00ab84;
 }
 
 .flex-row {
@@ -888,3 +902,185 @@ body{
     margin: 20px 20px;
     width: 150px;
 }
+
+/* cart */
+#totalPrice {
+    font-weight: bold;
+}
+
+
+.modal-content05 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f9f8f7;
+    width: 30%;
+    height: 100%;
+    padding: 20px 10px;
+    box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.modal_cart-none {
+    padding: 40px;
+}
+
+.your_cart {
+    display: grid;
+}
+
+.vanh-cart {
+    display: grid;
+}
+
+.your_cart-heading{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.your_cart-content {
+    font-size: 15px;
+    color:#4a4a4a;
+}
+
+.cart_thanhtap {
+    border: 1px solid #e5e7eb;
+    margin: 20px 0;
+}
+
+.cart_comment {
+    display: grid;
+}
+.cart_add{
+    margin-bottom: 10px;
+}
+
+.select-vanh {
+    height: 60px;
+    border:  1px solid #e5e7eb;
+    border-radius: 3px;
+    color: #817f7c;
+    font-size: 15px;
+    padding: 10px 0 0 10px;
+}
+
+.cart_image {
+    display:  flex;
+    margin-bottom: 60px;
+}
+
+.image_product-cart img {
+    width: 110px;
+}
+.image_product-cart {
+    margin-right: 20px;
+}
+
+.cart_name-product {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cart_price-product {
+    display: flex;
+}
+
+.tree_small {
+    color: #737272;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.cart_information-product {
+    display: grid;
+}
+
+.cart_quantity-tree {
+   margin: 10px 0;
+   display: grid;
+}
+
+.price_vanh-tree {
+    font-size: 18px;
+    color: #333;
+    margin-right: 30px;
+}
+.freeship_vanh-tree {
+    font-size: 13px;
+    color: #009a7b;
+    margin-top: 4px;
+}
+.cart_price-product{
+    display: flex;
+}
+
+.quantityInput {
+    margin-bottom: 5px;
+}
+
+.cart_quantity-vanh {
+    width: 60px;
+    padding: 0 5px;
+    margin-right: 90px;
+}
+
+.delete_product_vanh {
+    font-size: 13px;
+    font-style: italic;
+    color: #4a4a4a;
+}
+
+.cart_total {
+    display: grid;
+    position: absolute;
+}
+
+.total_money {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.totalPrice {
+    position: relative;
+    left: 170px;
+}
+
+.cart_money-dola {
+    position: relative;
+    left: 175px;
+}
+
+.cart_ship-vanh { 
+    display: flex;
+    margin: 10px 0;
+    font-size: 20px;
+    gap: 197px;
+    color: #3f3e3e;
+}
+
+.cart_total button {
+    height: 60px;
+   
+    text-decoration: none;
+    background-color:#009a7b;
+    font-size: 18px;
+    border-radius: 3px;
+    border: 1px solid #009a7b;
+}
+
+.cart_total button:hover {
+    background-color: #00ab84;
+}
+.cart_total button a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 140px;
+}
+
+.cart_total .thue {
+    color:#817f7c;
+    font-size: 14px;
+    font-style: italic;
+    margin: 10px 0;
+}
+
