@@ -132,7 +132,7 @@ form.addEventListener("submit", (event) => {
 });
 function send() {
     var arr = document.getElementsByTagName('input');
-    var qty = arr[3].value;
+    var qty = arr[4].value;
     if ( luaChonDaChon1 == 0) {
         alert('Please choose size');
         return;
