@@ -149,4 +149,9 @@ function send() {
         alert('Add to cart successfully')  ;
     };
    
+<<<<<<< HEAD
 }
+=======
+}
+ 
+>>>>>>> 58ff9085df4c72169b949fc61cbd209a9f1b049a
