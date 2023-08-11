@@ -29,7 +29,7 @@ function send() {
     if(qty == "") {
         alert("Please enter quantity");
         return;
-    }
+    } else alert('Add to cart successfully');
 }  
 var luaChonDaChon1 = 0;
 
