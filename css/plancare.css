@@ -291,3 +291,23 @@
     width: 300px;
     z-index: 1;
 }
+.sill-container{
+    font-family: Domaine Display;
+    width: 100%;
+    height: auto;
+    margin: 0px 52px;
+    padding: 0px 52px;
+    margin-bottom: 50px;
+}
+.sill-container .text-h3{
+    color: #00ab84;
+    font-size: 32px;
+    letter-spacing: -0.36px;
+    line-height: 40px;
+    margin-bottom: 25px;
+}
+.sill-container .text-h3 p{
+    color: #2D2A24;
+    line-height: 24px;
+    margin: 0px 0px 16px;
+}
