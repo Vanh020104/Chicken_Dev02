@@ -144,5 +144,9 @@ function send() {
     if(qty == "") {
         alert("Please enter quantity");
         return;
-    } else alert('Add to cart successfully');
-}  
+    }   else{ 
+        window.location.href = "http://127.0.0.1:5501/html/customer.html";
+        alert('Add to cart successfully')  ;
+    };
+   
+}

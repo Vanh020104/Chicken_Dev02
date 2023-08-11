@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/backtop.css">
     
 </head>
 <body>
@@ -611,7 +612,9 @@
         
         
         
-        
+        <div id="backtop">
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
    
     </div>
 
@@ -628,4 +631,21 @@
         localStorage.setItem("transferredValue", valueToTransfer);
     });
 </script>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+   <script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if($(this).scrollTop()){
+                $('#backtop').fadeIn();
+            } else{
+                $('backtop').fadeOut();
+            }
+        });
+        $("#backtop").click(function(){
+            $('html, body').animate({
+                scrollTop: 0
+            }, 1000);
+        });
+    });
+   </script> 
 </html>

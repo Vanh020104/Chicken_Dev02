@@ -41,7 +41,7 @@
     display: flex;
     align-items: center;
     font-size: 21px;
-    font-weight: 600;
+    font-weight: 300;
 }
 .box3__items-2 p{
  margin-right: 10px;
@@ -52,7 +52,8 @@
 }
 .box3__items:hover{
     font-style: italic;
-    color: aqua;
+    color: #23c59f;
+    
     
 }
 .box3__items:hover p{ 
@@ -166,4 +167,3 @@
     width: 100%;
     height: 100%;
 }
-
